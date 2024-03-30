@@ -1,0 +1,23 @@
+﻿@model WebApplication1.Models.WeatherModel
+
+<h1>Weather Information</h1>
+<div class="weather-info">
+    <p>City: @Model.City</p>
+    <p>Country: @Model.Country</p>
+    <p>Temperature: @Model.Temperature &deg;C</p>
+    <p>Description: @Model.Description</p>
+</div>
+
+<style>
+    .weather-info {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+        .weather-info p {
+            margin: 5px 0;
+        }
+</style>
